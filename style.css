@@ -1,0 +1,87 @@
+/* style.css limpo para uso com Bootstrap */
+
+body {
+    background-color: #f8f9fa;
+    padding-top: 70px !important; /* Garante espaço para o navbar fixo */
+}
+
+.container-custom {
+    max-width: 800px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    padding: 32px;
+}
+
+.table-custom {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+
+.btn-custom {
+    min-width: 120px;
+}
+
+/* Adicione aqui outros ajustes específicos que não conflitem com Bootstrap */
+
+/* Destaque para o nome do colaborador */
+.colaborador-nome {
+    color: #1976d2;
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
+
+/* Caixa de informações do colaborador */
+.info-colaborador {
+    background: linear-gradient(90deg, #e3f2fd 0%, #fff 100%);
+    border-left: 5px solid #1976d2;
+    border-radius: 6px;
+    padding: 8px 12px 4px 12px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 8px rgba(21,101,192,0.07);
+    margin-left: 0;
+    font-size: 0.97rem;
+}
+
+/* Banco de horas negativo em vermelho, positivo em verde */
+.banco-negativo { color: #c62828; font-weight: bold; }
+.banco-positivo { color: #2e7d32; font-weight: bold; }
+
+/* Tabela de marcações mais colorida */
+.table-marcacoes th {
+    background: #1976d2;
+    color: #fff;
+    border-color: #1565c0;
+}
+.table-marcacoes td {
+    background: #f1f8e9;
+}
+
+/* Seta para baixo nos selects do formulário de novo registro */
+.card select.form-control, .card select.form-control-sm {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url('data:image/svg+xml;utf8,<svg fill="%23666" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>') no-repeat right 0.75rem center/1.2em auto, #fff;
+    padding-right: 2.2em;
+}
+
+/* Ajuste responsivo para inputs da tabela de marcações em telas pequenas */
+@media (max-width: 600px) {
+  .table-marcacoes input[type="text"],
+  .table-marcacoes input[type="time"] {
+    font-size: 0.82rem;
+    min-width: 85px;
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+  .table-marcacoes th, .table-marcacoes td {
+    padding-left: 2px;
+    padding-right: 2px;
+    word-break: break-word;
+    white-space: normal;
+  }
+}
